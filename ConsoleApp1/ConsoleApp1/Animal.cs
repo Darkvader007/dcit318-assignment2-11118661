@@ -8,9 +8,17 @@ namespace ConsoleApp1
 {
      class Animal
     {
-        void MakeSound()
+        public virtual void MakeSound()
         {
-            Console.WriteLine("Meow");
+            Console.WriteLine("Eiiiii");
+        }
+    }
+
+    class Dog : Animal
+    {
+        public override void MakeSound() 
+        { 
+               Console.WriteLine("Bark");  
         }
     }
 }
