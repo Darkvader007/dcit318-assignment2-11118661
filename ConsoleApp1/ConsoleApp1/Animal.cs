@@ -21,4 +21,11 @@ namespace ConsoleApp1
                Console.WriteLine("Bark");  
         }
     }
+    class Cat : Animal
+    {
+        public override void MakeSound()
+        {
+            Console.WriteLine("Meow");
+        }
+    }
 }
