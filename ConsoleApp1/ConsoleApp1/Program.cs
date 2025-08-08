@@ -5,11 +5,10 @@ class Program
 {
     static void Main(string[] args)
     {
+        Car volvo = new Car();
+        Bicycle bmw = new Bicycle();
 
-       Shape small_circle = new Circle();
-        small_circle.GetArea();
-
-        Shape parallelogram = new Rectangle();
-        parallelogram.GetArea();
+        volvo.Move();
+        bmw.Move();
     }
 }
