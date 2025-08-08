@@ -6,11 +6,10 @@ class Program
     static void Main(string[] args)
     {
 
-        Dog Kweku = new Dog();
-        Kweku.MakeSound();
-        Animal dog = new Animal();
-        dog.MakeSound();
-        Cat peace = new Cat();
-        peace.MakeSound();
+       Shape small_circle = new Circle();
+        small_circle.GetArea();
+
+        Shape parallelogram = new Rectangle();
+        parallelogram.GetArea();
     }
 }
