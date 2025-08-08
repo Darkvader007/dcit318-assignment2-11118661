@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO.Pipes;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -14,7 +15,22 @@ namespace ConsoleApp1
        
     
      }
+    class Circle : Shape
+    {
 
-     
-    
+        public int radius;
+        public const double ConstPI = 2.17;
+        public override void GetArea()
+        {
+            Console.WriteLine(" Enter the length of the radius ");
+            radius = Convert.ToInt32( Console.ReadLine());
+            double Area = 2 * ConstPI * radius;
+            Console.WriteLine($" The Area of the Circle with radius {radius} is {Area} ");
+        }
+
+
+    }
+
+
+
 }
