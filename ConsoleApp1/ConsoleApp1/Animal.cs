@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         public virtual void MakeSound()
         {
-            Console.WriteLine("Eiiiii");
+            Console.WriteLine("Some generic sound");
         }
     }
 
