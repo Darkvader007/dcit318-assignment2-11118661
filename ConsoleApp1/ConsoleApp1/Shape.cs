@@ -31,6 +31,21 @@ namespace ConsoleApp1
 
     }
 
+    class Rectangle : Shape
+    {
+        public int width;
+        public int length;
+
+        public override void GetArea()
+        {
+            Console.WriteLine(" Enter the length; the longer side: ");
+            length = Convert.ToInt32( Console.ReadLine());
+            Console.WriteLine(" Enter the width; the shorter side: ");
+            width = Convert.ToInt32( Console.ReadLine());
+            int Area = length * width;
+            Console.WriteLine($"The Area of the Rectangle is {Area}");
+        }
 
 
+    }
 }
